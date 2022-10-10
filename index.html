@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Photo Gallery</title>
+  </head>
+
+<body>
+  <header>
+    <h1>scenery photos gallery</h1>
+  </header>
+  
+  <div class="gallery">
+    <div class="frame">
+      <img src="./img/scene 1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 5.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 6.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 7.jpeg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 8.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+    </div>
+    <div class="frame">
+      <img src="./img/scene 9.jpeg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="./img/scene 1.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="./img/scene 2.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="./img/scene 3.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="./img/scene 4.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="./img/scene 5.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="./img/scene 6.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="./img/scene 7.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="./img/scene 8.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="./img/scene 9.jpeg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Brown Wooden House Surrounded by Green Trees">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Building Photography">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="First Perspective Photography of Hanging Bridge">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Narrow path between autumn trees in mist">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Scenic View of the Forest During Sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Sunrise Shade of a Forest">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 7.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Green Leafed Tree">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 8.jpeg" style="width:100%" onclick="currentSlide(8)" alt="Gray and Brown Boat Traveling on Man-made River">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./img/scene 9.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Forest during Day">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
